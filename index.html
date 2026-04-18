@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wu Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Wu Portfolio</div>
+      <nav class="nav">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="lang-switch">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('zh')">中文</button>
+        <button onclick="setLanguage('ja')">日本語</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 data-i18n="heroTitle">Hi, I'm Xiao Wu.</h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          A Policy Science student at Ritsumeikan University, interested in policy analysis, data, and digital tools.
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 data-i18n="aboutTitle">About</h2>
+        <p data-i18n="aboutText">
+          I am an international student studying Policy Science in Japan...
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 data-i18n="projectsTitle">Projects</h2>
+
+        <div class="project-grid">
+          <article class="card">
+            <h3 data-i18n="project1Title">Love Diary Template</h3>
+            <p data-i18n="project1Text">
+              A customizable diary template project...
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="project2Title">Weather API</h3>
+            <p data-i18n="project2Text">
+              A small weather API project built with Vercel...
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="project3Title">More Coming Soon</h3>
+            <p data-i18n="project3Text">
+              This portfolio is still growing...
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 data-i18n="contactTitle">Contact</h2>
+        <p data-i18n="contactText">Feel free to reach out by email:</p>
+        <p><a href="mailto:ps0647sh@ed.ritsumei.ac.jp">ps0647sh@ed.ritsumei.ac.jp</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footerText">
+        Built by Xiao Wu with HTML, CSS, JavaScript, GitHub, and Vercel.
+      </p>
+    </div>
+  </footer>
+
+  <script src="data/i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
