@@ -82,6 +82,7 @@ const i18n = {
     contactText: "Feel free to reach out if you would like to connect.",
     contactEmailLabel: "Email",
     contactGithubLabel: "GitHub",
+    contactLinkedinLabel: "LinkedIn",
 
     footerText:
       "Built by Xiao Wu with HTML, CSS, JavaScript, GitHub, and Vercel."
@@ -170,6 +171,7 @@ const i18n = {
     contactText: "如果你希望交流、联系或合作，欢迎发邮件给我。",
     contactEmailLabel: "邮箱",
     contactGithubLabel: "GitHub",
+    contactLinkedinLabel: "领英",
 
     footerText:
       "本网站由小吴使用 HTML、CSS、JavaScript、GitHub 和 Vercel 搭建。"
@@ -258,6 +260,7 @@ const i18n = {
     contactText: "交流や相談をご希望でしたら、メールでお気軽にご連絡ください。",
     contactEmailLabel: "メール",
     contactGithubLabel: "GitHub",
+    contactLinkedinLabel: "LinkedIn",
 
     footerText:
       "このサイトは小吴が HTML、CSS、JavaScript、GitHub、Vercel で作成しました。"
