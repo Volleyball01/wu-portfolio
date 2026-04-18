@@ -2,3 +2,8 @@ node_modules/
 .env
 .DS_Store
 Thumbs.db
+private_notes/
+项目结构.txt
+DEV_LOG.md
+PROJECT_CONTEXT.md
+未来计划.md
