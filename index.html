@@ -4,67 +4,198 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wu Portfolio</title>
+  <meta
+    name="description"
+    content="Personal portfolio of Xiao Wu — Policy Science, data, digital tools, and multilingual presentation."
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">Wu Portfolio</div>
+      <a class="logo" href="#">Wu Portfolio</a>
+
       <nav class="nav">
         <a href="#about" data-i18n="navAbout">About</a>
         <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#learning" data-i18n="navLearning">Learning</a>
+        <a href="#resume" data-i18n="navResume">Resume</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
+
       <div class="lang-switch">
-        <button onclick="setLanguage('en')">EN</button>
-        <button onclick="setLanguage('zh')">中文</button>
-        <button onclick="setLanguage('ja')">日本語</button>
+        <button type="button" data-lang="en" onclick="setLanguage('en')">EN</button>
+        <button type="button" data-lang="zh" onclick="setLanguage('zh')">中文</button>
+        <button type="button" data-lang="ja" onclick="setLanguage('ja')">日本語</button>
       </div>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <h1 data-i18n="heroTitle">Hi, I'm Xiao Wu.</h1>
-        <p class="hero-subtitle" data-i18n="heroSubtitle">
-          A Policy Science student at Ritsumeikan University, interested in policy analysis, data, and digital tools.
-        </p>
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <p class="eyebrow" data-i18n="heroEyebrow">Policy • Data • Digital Tools</p>
+          <h1 data-i18n="heroTitle">
+            Hi, I'm Xiao Wu.
+          </h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            A Policy Science student in Japan, exploring the intersection of policy analysis, data, and practical digital tools.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects" data-i18n="heroBtnProjects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact" data-i18n="heroBtnContact">Contact Me</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel card">
+          <div class="panel-title" data-i18n="heroPanelTitle">Quick Snapshot</div>
+          <ul class="snapshot-list">
+            <li><span data-i18n="snapshot1Label">University</span><strong data-i18n="snapshot1Value">Ritsumeikan University</strong></li>
+            <li><span data-i18n="snapshot2Label">Major</span><strong data-i18n="snapshot2Value">Policy Science</strong></li>
+            <li><span data-i18n="snapshot3Label">Focus</span><strong data-i18n="snapshot3Value">Policy, data, and digital tools</strong></li>
+            <li><span data-i18n="snapshot4Label">Languages</span><strong data-i18n="snapshot4Value">中文 / English / 日本語</strong></li>
+          </ul>
+        </aside>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container">
         <h2 data-i18n="aboutTitle">About</h2>
-        <p data-i18n="aboutText">
-          I am an international student studying Policy Science in Japan...
-        </p>
+        <div class="info-grid">
+          <article class="card">
+            <h3 data-i18n="aboutCard1Title">Background</h3>
+            <p data-i18n="aboutCard1Text">
+              I am an international student studying Policy Science in Japan.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="aboutCard2Title">Interests</h3>
+            <p data-i18n="aboutCard2Text">
+              My interests include public policy, urban issues, data analysis, and practical digital tools.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="aboutCard3Title">Goal</h3>
+            <p data-i18n="aboutCard3Text">
+              I want to build a career around analysis, problem-solving, and practical impact.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container">
-        <h2 data-i18n="projectsTitle">Projects</h2>
+        <div class="section-head">
+          <h2 data-i18n="projectsTitle">Projects</h2>
+          <p class="section-desc" data-i18n="projectsDesc">
+            Small but real projects that show how I think, build, and improve.
+          </p>
+        </div>
 
         <div class="project-grid">
-          <article class="card">
+          <article class="card project-card">
+            <div class="card-topline" data-i18n="project1Tag">Tool / Workflow</div>
             <h3 data-i18n="project1Title">Love Diary Template</h3>
             <p data-i18n="project1Text">
-              A customizable diary template project...
+              A customizable diary template project integrating weather, news, and journaling structure.
             </p>
+            <div class="project-links">
+              <a href="https://markdown-diary-template.vercel.app" target="_blank" rel="noreferrer" data-i18n="linkLive">Live Demo</a>
+              <a href="https://github.com/Volleyball01/markdown-diary-template" target="_blank" rel="noreferrer" data-i18n="linkGithub">GitHub</a>
+            </div>
           </article>
 
-          <article class="card">
+          <article class="card project-card">
+            <div class="card-topline" data-i18n="project2Tag">API / Automation</div>
             <h3 data-i18n="project2Title">Weather API</h3>
             <p data-i18n="project2Text">
-              A small weather API project built with Vercel...
+              A lightweight weather API on Vercel for stable and structured weather display in personal tools.
+            </p>
+            <div class="project-links">
+              <a href="https://love-diary-zeta.vercel.app/api/weather" target="_blank" rel="noreferrer" data-i18n="linkApi">API</a>
+              <a href="#" data-i18n="linkPrivateRepo">Private Project</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="card-topline" data-i18n="project3Tag">Portfolio / Ongoing</div>
+            <h3 data-i18n="project3Title">Wu Portfolio</h3>
+            <p data-i18n="project3Text">
+              This portfolio itself is an ongoing project for presenting my background, work, and growth.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Volleyball01/wu-portfolio" target="_blank" rel="noreferrer" data-i18n="linkGithub">GitHub</a>
+              <a href="https://wu-portfolio-five.vercel.app" target="_blank" rel="noreferrer" data-i18n="linkLive">Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="learning" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="learningTitle">What I'm Learning / Thinking</h2>
+          <p class="section-desc" data-i18n="learningDesc">
+            Themes that I am currently exploring through study, writing, and projects.
+          </p>
+        </div>
+
+        <div class="learning-box card">
+          <ul class="learning-list">
+            <li data-i18n="learningItem1">Housing affordability and public policy</li>
+            <li data-i18n="learningItem2">Food price inflation in Japan</li>
+            <li data-i18n="learningItem3">Data analysis with R / Python</li>
+            <li data-i18n="learningItem4">How policy shapes real everyday life</li>
+          </ul>
+          <p class="learning-note" data-i18n="learningNote">
+            Public policy is not just theory — it shapes real life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="resumeTitle">Resume Snapshot</h2>
+          <p class="section-desc" data-i18n="resumeDesc">
+            A compact overview of my current background and skills.
+          </p>
+        </div>
+
+        <div class="resume-grid">
+          <article class="card">
+            <h3 data-i18n="resumeEduTitle">Education</h3>
+            <p data-i18n="resumeEduText">
+              Ritsumeikan University — Policy Science
             </p>
           </article>
 
           <article class="card">
-            <h3 data-i18n="project3Title">More Coming Soon</h3>
-            <p data-i18n="project3Text">
-              This portfolio is still growing...
+            <h3 data-i18n="resumeSkillTitle">Skills</h3>
+            <p data-i18n="resumeSkillText">
+              R, Python, HTML, CSS, JavaScript, Git, Vercel, data analysis
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="resumeExpTitle">Experience</h3>
+            <p data-i18n="resumeExpText">
+              English tutoring and self-driven academic / digital projects
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="resumeGoalTitle">Career Direction</h3>
+            <p data-i18n="resumeGoalText">
+              Policy, analysis, consulting, and data-related roles in Japan
             </p>
           </article>
         </div>
@@ -73,9 +204,23 @@
 
     <section id="contact" class="section">
       <div class="container">
-        <h2 data-i18n="contactTitle">Contact</h2>
-        <p data-i18n="contactText">Feel free to reach out by email:</p>
-        <p><a href="mailto:ps0647sh@ed.ritsumei.ac.jp">ps0647sh@ed.ritsumei.ac.jp</a></p>
+        <div class="section-head">
+          <h2 data-i18n="contactTitle">Contact</h2>
+          <p class="section-desc" data-i18n="contactText">
+            Feel free to reach out if you would like to connect.
+          </p>
+        </div>
+
+        <div class="contact-card card">
+          <p>
+            <strong data-i18n="contactEmailLabel">Email</strong><br />
+            <a href="mailto:ps0647sh@ed.ritsumei.ac.jp">ps0647sh@ed.ritsumei.ac.jp</a>
+          </p>
+          <p>
+            <strong data-i18n="contactGithubLabel">GitHub</strong><br />
+            <a href="https://github.com/Volleyball01" target="_blank" rel="noreferrer">github.com/Volleyball01</a>
+          </p>
+        </div>
       </div>
     </section>
   </main>

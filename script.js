@@ -10,6 +10,10 @@ function setLanguage(lang) {
     }
   });
 
+  document.querySelectorAll("[data-lang]").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
+  });
+
   localStorage.setItem("site-lang", lang);
 }
 
@@ -18,7 +22,6 @@ function detectInitialLanguage() {
   if (saved && i18n[saved]) return saved;
 
   const browserLang = navigator.language.toLowerCase();
-
   if (browserLang.startsWith("zh")) return "zh";
   if (browserLang.startsWith("ja")) return "ja";
   return "en";
